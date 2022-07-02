@@ -2,8 +2,6 @@
 
 body {
 	margin: 0;
-	width: auto;
-	height: 2176px;
 	font-family: "roboto";
 }
 
@@ -20,8 +18,10 @@ header {
 .header-top-box {
 	background-color: #7abcac;
 	display: inline-block;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	width: 100%;
-	margin-bottom: -5px;
+	margin-bottom: 0;
 }
 
 .header-bottom-box {
@@ -143,25 +143,27 @@ img {
 	font-weight: 500;
 	text-transform: uppercase;
 	padding: 2px 10px 2px 10px;
-	margin-bottom: 30px;
 }
 
 .green {
 	background-color: #7abcac;
 	border-radius: 10px;
 	width: fit-content;
+	margin-bottom: 30px;
 }
 
 .yellow {
 	background-color: #d8da79;
 	border-radius: 10px;
 	width: fit-content;
+	margin-bottom: 30px;
 }
 
 .orange {
 	background-color: #c29486;
 	border-radius: 10px;
 	width: fit-content;
+	margin-bottom: 30px;
 }
 
 .work-experience {
@@ -197,11 +199,9 @@ img {
 	text-align: justify;
 }
 
-.work-experience-division {
+#work-experience-content {
 	border-right: 3px solid #dcdcdc;
 	height: 250px;
-	margin-right: 35px;
-	margin-left: 35px;
 }
 
 .footer {
