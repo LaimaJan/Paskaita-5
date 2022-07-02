@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Sale price calculator</title>
+	</head>
+	<body>
+		<div class="content">
+			<p class="content-heading">Sale Price Calculator</p>
+
+			<div class="item-price-content">
+				<p>Item price:</p>
+				<input type="number" class="item-price" />
+			</div>
+
+			<div class="sale-percentage">
+				<label for="percentages">Sale percentage:</label>
+				<select name="percentage" class="percentages">
+					<option value="0.5">50%</option>
+					<option value="0.25">25%</option>
+					<option value="0.1">10%</option>
+				</select>
+			</div>
+			<button type="submit" id="btn">Press to see the sale price</button>
+			<div class="sale-price-results">
+				<p id="sale-price">Sale Price:</p>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="action.js"></script>
+	</body>
+</html>

@@ -1,0 +1,193 @@
+body {
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-left: 2px solid gray;
+    border-bottom: 2px solid gray; 
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: green;   
+}
+
+.scale {
+    animation-name: scale;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes scale {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(2);
+	}
+}
+
+/* .scale {
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+.scale:hover {
+    transform: scale(2);
+} */
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(2);
+	}
+    100% {
+		transform: scale(1);
+	}
+} 
+
+/* .pulse {
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.pulse:hover {
+    transform: scale(2);
+} */
+
+.scale-opacity {
+    animation-name: scale-opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes scale-opacity {
+	0% {
+		transform: scale(1);
+	}
+    100% {
+		transform: scale(2);
+        opacity: 0;
+	}
+} 
+
+/* .scale-opacity {
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.scale-opacity:hover {
+    transform: scale(2);
+    opacity: 0;
+} */
+
+/* .press-scale:hover {
+    animation-name: press-scale;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes press-scale {
+	0% {
+		transform: scale(1);
+	}
+    100% {
+		transform: scale(2);
+	}
+}  */
+
+.press-scale {
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.press-scale:hover {
+    transform: scale(2);
+}
+
+.pulse-colour {
+    animation-name: pulse-colour;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes pulse-colour {
+	0% {
+		transform: scale(1);
+        background-color: green;
+	}
+    10% {
+		/* transform: scale(1.2); */
+        background-color: red;
+	}
+    20% {
+		/* transform: scale(1.4); */
+        background-color: yellow;
+	}
+    30% {
+		/* transform: scale(1.6); */
+        background-color: blue;
+	}
+    40% {
+		/* transform: scale(1.8); */
+        background-color: violet;
+	}
+    50% {
+		/* transform: scale(2); */
+        background-color: brown;
+	}
+    60% {
+		/* transform: scale(1.8); */
+        background-color: red;
+	}
+    70% {
+		/* transform: scale(1.6); */
+        background-color: yellow;
+	}
+    80% {
+		/* transform: scale(1.4); */
+        background-color: blue;
+	}
+    90% {
+		/* transform: scale(1.2); */
+        background-color: violet;
+	}
+    100% {
+		transform: scale(2);
+        background-color: green;
+	}
+   
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        console.log("reverse");
+        let r = "reverse";
+
+        let x = r[6] + r[5] + r[4] + r[3] + r[2] + r[1] + r[0];
+        console.log(x);
+
+        let amount = 5000;
+        let percents = 5;
+        let taxesTotal = amount * percents / 100;
+        let year = 2022;
+        let month_name = "Feb"
+        let day = 27;
+
+        // let darbas = "Your yearly income is $"+amount+" and you must pay ";
+        // darbas = darbas + percents +" of income";
+        // darbas = darbas + "\ntaxes. Which is "+taxesTotal+" in total.\nYou must pay the bills till "+year+" " ;
+        // darbas = darbas + month_name+" "+day+".\n\nBest regards, \"Tax Reminder\" Inc.";
+
+        let darbas = 'Your yearly income is $'+amount+' and you must pay ';
+        darbas = darbas + percents +' of income';
+        darbas = darbas + '\ntaxes. Which is '+taxesTotal+' in total.\nYou must pay the bills till '+year+' ' ;
+        darbas = darbas + month_name+' '+day+'.\n\nBest regards, \'Tax Reminder\' Inc.';
+        
+        
+        // let darbas = `Your yearly income is ${amount} and you must pay`;
+        // darbas = darbas + ` ${percents}% of income`;
+        // darbas = darbas + `\ntaxes. Which is ${taxesTotal} in total.\nYou must pay the bills till ${year}`;
+        // darbas = darbas + ` ${month_name} ${day}.\n\nBest regards, "Tax Reminder" Inc.`;
+
+        console.log(darbas);
+    </script>
+</body>
+</html>

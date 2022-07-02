@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap");
+
+:root {
+	--main-color-red: #fd3c01;
+}
+
+body {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	background-image: url("forSale.webp");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	font-family: "Mukta";
+}
+
+.content {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+
+	background-color: #e2eaec;
+	width: 400px;
+	height: 350px;
+	margin-top: 120px;
+	margin-left: 140px;
+	border-radius: 2%;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.content-heading {
+	font-size: 28px;
+	text-transform: uppercase;
+	border-bottom: 2px solid var(--main-color-red);
+
+	margin-bottom: 15px;
+	margin-top: 25px;
+}
+
+.item-price-content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.item-price-content p {
+	font-size: 22px;
+	padding-right: 10px;
+	margin: 0;
+}
+
+.item-price {
+	height: 30px;
+	width: 100px;
+	border: 1px solid var(--main-color-red);
+	border-radius: 5px;
+	font-size: 17px;
+}
+
+.sale-percentage {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/* margin-bottom: 10px; */
+}
+
+.sale-percentage {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.sale-percentage label {
+	font-size: 22px;
+	padding-right: 10px;
+}
+
+.sale-percentage select {
+	height: 30px;
+	width: 60px;
+	border: 1px solid var(--main-color-red);
+	border-radius: 5px;
+	font-size: 17px;
+}
+
+#btn {
+	height: 35px;
+	width: 220px;
+	border: 1px solid var(--main-color-red);
+	border-radius: 5px;
+	font-size: 17px;
+	margin-top: 20px;
+}
+
+/* .sale-price-results {
+	font-size: 22px;
+	margin-top: 20px;
+} */
+
+/* .sale-price-results:before {
+	content: "Sale price";
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+	text-transform: uppercase;
+} */
+
+#sale-price {
+	font-size: 22px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
